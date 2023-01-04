@@ -24,7 +24,7 @@ const Header = () => {
         }}
       >
         <img src={logo} alt="Logo" />
-        <Link to='/' fontSize='20px' margin='0 10px' >Soundwave</Link>
+        <Link to='/' fontSize='20px' margin='20px 0' >Soundwave</Link>
       </Box>
 
       <Box

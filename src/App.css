@@ -27,3 +27,6 @@ img{
 a{
     text-decoration: none;
 }
+label{
+    color: var(--colorfont);
+}
