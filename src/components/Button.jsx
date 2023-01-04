@@ -4,7 +4,7 @@ import { Button } from '@mui/material'
 const BtnHome = () => {
   return (
     <>
-      <Button
+      <Button href='/join'
         variant='contained'
         sx={{
           backgroundColor: '#1762A7',

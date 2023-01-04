@@ -1,5 +1,5 @@
 import React from 'react'
-import { BottomNavigation, BottomNavigationAction, Box, Typography } from '@mui/material'
+import { BottomNavigation, BottomNavigationAction, Box } from '@mui/material'
 import TwitterIcon from '@mui/icons-material/Twitter';
 import FacebookIcon from '@mui/icons-material/Facebook';
 import { makeStyles } from '@mui/styles';
@@ -9,7 +9,6 @@ const useStyles = makeStyles({
     root: {
         fontSize: '17.2px',
         fontWeight: '700',
-
     },
     bg: {
         backgroundColor: '#2F303A'

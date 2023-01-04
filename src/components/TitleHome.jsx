@@ -1,9 +1,6 @@
 import { Typography, Card, CardContent } from "@mui/material"
 import BtnHome from './Button'
 
-
-
-
 const TitleHome = () => {
     return (
         <Card sx={{
