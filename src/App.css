@@ -1,0 +1,29 @@
+:root{
+    --backgr: #2F303A;
+    --colorfont: #ffff;
+    --bg-black:#202027;
+    --colorborder: #2E3852;
+    --bg-button: #1762A7;
+    --hov-button: #2180d8;
+    --pink: #D60679;
+    --circleV: #BC3A80;
+    --circleB: #303046;
+}
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+
+    font-family: 'Poppins', sans-serif;
+   
+    color: var(--colorfont);
+}
+html{
+    background-color: var(--backgr);
+}
+img{
+    width: 20%;
+}
+a{
+    text-decoration: none;
+}
