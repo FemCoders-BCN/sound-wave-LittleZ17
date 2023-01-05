@@ -1,39 +1,89 @@
-import { Typography, Box, TextField } from "@mui/material"
+import { Typography, Box, TextField, InputAdornment, OutlinedInput } from "@mui/material"
+import { Container } from "@mui/system"
 import BtnHome from "./Button"
-import { makeStyles } from "@mui/styles"
 
 
-const useStyles = makeStyles({
-    text: {
-        fontSize: '17.2px',
-        fontWeight: '700',
-
-    },
-    title: {
-        fontSize: '61px',
-        fontWeight: '700',
-    }
-});
 
 const TitleJoin = () => {
 
-    const classes = useStyles();
 
     return (
-        <Box
-        >
-            <Typography  classes={classes.title}>Join the fun.</Typography>
+        <Container sx={{
+            display: 'flex',
+            flexDirection: 'column',
+            placeContent: 'center',
+        }}>
+            <Container
+            sx={{
+                margin:'15px 0',
+            }}
+            >
+                <Typography
+                    variant={'h2'}
+                    gutterBottom={true}
+                    sx={{
+                        fontFamily: 'Poppins, sans-serif',
+                        fontWeight: '700',
+                    }}
+                >Join the <span
+                    sx={{
+                        fontcolor: '#D60679',
+
+                    }}
+                >fun.</span></Typography>
+            </Container>
             <Box
-                component="form">
-                <Typography className={classes.text}>Name:</Typography>
-                <TextField id="outlined-basic" label="Outlined" variant="outlined" />
-                <Typography className={classes.text}>Email:</Typography>
-                <TextField id="outlined-basic" label="Outlined" variant="outlined" />
-                <Typography className={classes.text}>Password:</Typography>
-                <TextField id="outlined-basic" label="Outlined" variant="outlined" />
-                <BtnHome/>
+                // component="form"
+                sx={{
+                    alignSelf: 'center',
+                    margin: '0',
+                    // marginBottom: '10%',
+                    background: '#202027',
+                    borderRadius: '15px',
+                    padding: '5% 10%',
+                    width: '320px',
+
+                    display: 'flex',
+                    justifyContent: 'center',
+                    flexDirection: 'column',
+
+                }}
+            >
+                <Typography component={'p'}
+                    sx={{
+                        margin: '15px 0',
+                        fontFamily: 'Poppins, sans-serif',
+                        fontWeight: '700',
+                    }}
+                >Name:</Typography>
+                <TextField
+                    sx={{
+                        border: '2px solid #2E3852',
+                        borderRadius: '5px',
+                        height: ''
+                    }}
+                />
+                <Typography sx={{
+                    margin: '15px 0',
+                    fontFamily: 'Poppins, sans-serif',
+                    fontWeight: '700',
+                }}>Email:</Typography>
+                <TextField sx={{
+                    border: '2px solid #2E3852',
+                    borderRadius: '5px'
+                }} />
+                <Typography sx={{
+                    margin: '15px 0',
+                    fontFamily: 'Poppins, sans-serif',
+                    fontWeight: '700',
+                }}>Password:</Typography>
+                <TextField sx={{
+                    border: '2px solid #2E3852',
+                    borderRadius: '5px',
+                }} />
+                <BtnHome />
             </Box>
-        </Box>
+        </Container >
     )
 }
 

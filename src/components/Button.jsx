@@ -9,6 +9,8 @@ const BtnHome = () => {
         sx={{
           backgroundColor: '#1762A7',
           textTransform:'capitalize',
+          margin:'10% 0',
+          fontFamily: 'Poppins, sans-serif',
         }}
       >Join Now</Button>
     </>

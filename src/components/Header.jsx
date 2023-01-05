@@ -13,7 +13,7 @@ const Header = () => {
         justifyContent: 'space-between',
         alignItems: 'center',
         width: '100%',
-        margin: '20px 0',
+        margin: '5% 0',
       }}>
       <Box
         sx={{
@@ -23,7 +23,7 @@ const Header = () => {
           width: '50vw'
         }}
       >
-        <img src={logo} alt="Logo" />
+        <img className='logo' src={logo} alt="Logo" />
         <Link to='/' fontSize='20px' margin='20px 0' >Soundwave</Link>
       </Box>
 

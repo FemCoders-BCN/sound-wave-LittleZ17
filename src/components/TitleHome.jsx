@@ -2,7 +2,10 @@ import { Typography, Card, CardContent } from "@mui/material"
 import BtnHome from './Button'
 
 const TitleHome = () => {
+
+
     return (
+        
         <Card sx={{
             boxShadow: '0',
             backgroundColor:'#2F303A',
@@ -12,7 +15,7 @@ const TitleHome = () => {
                     padding: '180px 16px'
                 }}
             >
-                <Typography fontSize='50px' fontWeight='500'>
+                <Typography fontSize='50px' fontWeight='500' fontFamily='Poppins, sans-serif'>
                     Feel the Music
                 </Typography>
                 <Typography fontSize='21px' fontWeight='500' component="p" padding='20px 0'>
