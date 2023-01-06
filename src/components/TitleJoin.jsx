@@ -5,13 +5,13 @@ import BtnHome from "./Button"
 
 
 const TitleJoin = () => {
-
-
     return (
         <Container sx={{
             display: 'flex',
             flexDirection: 'column',
             placeContent: 'center',
+            padding:'0 8%'
+            
         }}>
             <Container
             sx={{
@@ -51,35 +51,39 @@ const TitleJoin = () => {
             >
                 <Typography component={'p'}
                     sx={{
-                        margin: '15px 0',
+                        // margin: '15px 0',
                         fontFamily: 'Poppins, sans-serif',
                         fontWeight: '700',
-                    }}
-                >Name:</Typography>
+                        fontSize:'1.075rem',
+                    }}>Name:</Typography>
                 <TextField
                     sx={{
                         border: '2px solid #2E3852',
                         borderRadius: '5px',
-                        height: ''
+                        marginBottom:'10%',
                     }}
                 />
                 <Typography sx={{
-                    margin: '15px 0',
+                    // margin: '15px 0',
                     fontFamily: 'Poppins, sans-serif',
                     fontWeight: '700',
+                    fontSize:'1.075rem',
                 }}>Email:</Typography>
                 <TextField sx={{
                     border: '2px solid #2E3852',
-                    borderRadius: '5px'
+                    borderRadius: '5px',
+                    marginBottom:'10%',
                 }} />
                 <Typography sx={{
-                    margin: '15px 0',
+                    // margin: '15px 0',
                     fontFamily: 'Poppins, sans-serif',
                     fontWeight: '700',
+                    fontSize:'1.075rem',
                 }}>Password:</Typography>
                 <TextField sx={{
                     border: '2px solid #2E3852',
                     borderRadius: '5px',
+                    marginBottom:'10%'
                 }} />
                 <BtnHome />
             </Box>

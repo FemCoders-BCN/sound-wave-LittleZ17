@@ -1,7 +1,10 @@
 import Header from "../components/Header"
 import Title from '../components/TitleHome'
 import { useState, useEffect } from "react";
+import imgHome from '../assets/images/landing-page-girl.png'
+
 import { Container } from "@mui/system";
+
 
 
 const Home = () => {
@@ -21,7 +24,7 @@ const Home = () => {
   }, [])
 
   return (
-    <Container>
+    <Container >
       <Header />
       <Title />
       {/* <Typography variant="h6">{windowW}</Typography> */}

@@ -6,12 +6,13 @@ import TitleJoin from "../components/TitleJoin"
 
 const Join = () => {
   return (
-    <Container sx={{
-      display:'flex',
-      flexDirection:'column',
-      minHeight:'100vh',
-      padding:'0'
-    }}>
+    <Container
+      sx={{
+        display: 'flex',
+        flexDirection: 'column',
+        minHeight: '100vh',
+        padding: '0'
+      }}>
       <Header />
       <TitleJoin />
       <Footer />

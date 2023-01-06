@@ -1,4 +1,4 @@
-import { Box} from '@mui/material'
+import { Box, Typography, CardMedia } from '@mui/material'
 import { Container } from '@mui/system'
 import { Link } from 'react-router-dom'
 import logo from '../assets/images/logo.png'
@@ -9,34 +9,50 @@ const Header = () => {
     <Container
       direction='row'
       sx={{
+        padding: '5%',
         display: 'flex',
         justifyContent: 'space-between',
         alignItems: 'center',
         width: '100%',
-        margin: '5% 0',
+
       }}>
       <Box
+        alignContent={'space-between'}
         sx={{
           display: 'flex',
           flexDirection: 'row',
+          justifyContent: 'space-between',
           alignItems: 'center',
-          width: '50vw'
+          // justifyItems:'start',
+          // justifyContent: 'center',
+
         }}
       >
-        <img className='logo' src={logo} alt="Logo" />
-        <Link to='/' fontSize='20px' margin='20px 0' >Soundwave</Link>
+
+        <CardMedia
+          component="img"
+          sx={{
+            width: { sm: '20vw', lg: '5vw' },
+            // display: {
+            //     xs: 'none', sm: 'block', lg: 'block',
+            // },
+          }}
+          image={logo}
+          alt="Logo"
+        />
+      <Link to='/'><Typography fontSize='1.25rem' fontFamily='Poppins, sans-serif'>Soundwave</Typography></Link>
       </Box>
 
       <Box
         direction='row'
         sx={{
-          width: '50%',
+          width: '20%',
           display: 'flex',
-          justifyContent: 'space-around',
+          justifyContent: 'space-between',
         }}
       >
-        <Link to='/discover' fontSize='16px'>Discover</Link>
-        <Link to='/join' fontSize='16px'>Join</Link>
+        <Link to='/discover'><Typography fontSize='1rem' fontFamily='Poppins, sans-serif'>Discover</Typography></Link>
+        <Link to='/join'><Typography fontSize='1rem' fontFamily='Poppins, sans-serif'>Join</Typography></Link>
       </Box>
     </Container>
   )

@@ -7,36 +7,34 @@ import React from 'react'
 
 const TitleDiscover = () => {
     return (
-        <Container
-            sx={{
-                padding: '0 5%'
-            }}>
+        <Container sx={{ padding: '0 5%' }} >
             <Typography
-                variant={'h3'}
-                gutterBottom={true}
-                sx={{
-                    fontFamily: 'Poppins, sans-serif',
-                    margin: '10% 0'
-                }}>Discover new
-                music</Typography>
+                fontFamily={'Poppins, sans-serif'}
+                fontSize={'3.125rem'}
+                sx={{ margin: '5% 0' }}>Discover new
+                music
+            </Typography>
+
             <BoxIcons />
-            <Box
-            sx={{padding:'5% 0'}}
-            >
+
+            <Box sx={{ padding: '5% 0' }} >
                 <Typography
                     variant={'p'}
-                    sx={{
-                        fontFamily: 'Poppins, sans-serif',
-                    }}>By joining you can benefit by listening to
-                    the latest albums released.</Typography>
+                    fontFamily={'Poppins, sans-serif'}
+                    fontSize={'1.094rem'}
+                    fontWeight={'300'} >By joining you can benefit by listening to
+                    the latest albums released.
+                </Typography>
             </Box>
+
             <Box
                 sx={{
                     display: 'flex',
                     alignItems: 'center',
                     justifyContent: 'center',
+                    marginBottom: '5%'
                 }}>
-                <img className='cover' src={covers} alt="imagen del album" />
+                <img src={covers} alt="imagen del album" />
             </Box>
 
         </Container>

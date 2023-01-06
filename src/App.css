@@ -1,7 +1,7 @@
-:root{
+:root {
     --backgr: #2F303A;
     --colorfont: #ffff;
-    --bg-black:#202027;
+    --bg-black: #202027;
     --colorborder: #2E3852;
     --bg-button: #1762A7;
     --hov-button: #2180d8;
@@ -9,31 +9,31 @@
     --circleV: #BC3A80;
     --circleB: #303046;
 }
-*{
+
+* {
     padding: 0;
     margin: 0;
     box-sizing: border-box;
-
     font-family: 'Poppins', sans-serif;
-   
     color: var(--colorfont);
 }
-html{
+
+html {
     background-color: var(--backgr);
 }
- img{
-    width: 80%;
-} 
-/* .cover img{
-    width: 80%;
-} */
-a{
+
+a {
     text-decoration: none;
 }
-label{
+
+label {
     color: var(--colorfont);
 }
 
-h2 > span{
+h2>span {
     color: var(--pink);
+}
+
+span{
+    font-family: 'Poppins', sans-serif;
 }

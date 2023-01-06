@@ -8,11 +8,14 @@ const BtnHome = () => {
         variant='contained'
         sx={{
           backgroundColor: '#1762A7',
-          textTransform:'capitalize',
-          margin:'10% 0',
+          textTransform: 'capitalize',
+          margin: '10% 0',
           fontFamily: 'Poppins, sans-serif',
-        }}
-      >Join Now</Button>
+          fontSize: '1rem',
+          fontWeight: '300',
+          alignSelf: 'start'
+        }}>Join Now
+      </Button>
     </>
   )
 }
