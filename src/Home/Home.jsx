@@ -1,33 +1,16 @@
-import Header from "../components/Header"
-import Title from '../components/TitleHome'
-import { useState, useEffect } from "react";
-import imgHome from '../assets/images/landing-page-girl.png'
-
+import Header from '../components/Header'
+import Title from './TitleHome'
 import { Container } from "@mui/system";
-
+import CircleHome from './CircleHome';
 
 
 const Home = () => {
 
-  const [windowW, setwindoW] = useState(window.innerWidth);
-
-  useEffect(() => {
-    const handleResize = () => {
-      setwindoW(window.innerWidth);
-    };
-
-    window.addEventListener('resize', handleResize);
-
-    return () => {
-      window.removeEventListener('resize', handleResize);
-    };
-  }, [])
-
   return (
-    <Container >
+    <Container>
+      <CircleHome />
       <Header />
       <Title />
-      {/* <Typography variant="h6">{windowW}</Typography> */}
     </Container>
   )
 }

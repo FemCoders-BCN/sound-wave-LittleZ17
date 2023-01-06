@@ -1,5 +1,5 @@
 import React from 'react'
-import { BottomNavigation, BottomNavigationAction, Box, Typography } from '@mui/material'
+import { BottomNavigation, BottomNavigationAction, Box } from '@mui/material'
 import TwitterIcon from '@mui/icons-material/Twitter';
 import FacebookIcon from '@mui/icons-material/Facebook';
 import { ThemeProvider, createTheme } from '@mui/material/styles';
@@ -18,14 +18,6 @@ const theme = createTheme({
     },
 })
 
-const styles = (theme) => ({
-    root: {
-      [theme.breakpoints.between('md', 'lg')]: {
-        backgroundColor:'#ffff',
-      },
-    },
-  });
-
 
 const Footer = () => {
 
@@ -36,8 +28,10 @@ const Footer = () => {
         <ThemeProvider theme={theme}>
             <Box
                 sx={{
+                    position:'relative',
+                    zIndex:'3',
                     background: '#202027',
-                    width: '100%',
+                    width: { xs: '100vw', sm: '100vw', lg: '100vw' },
                     display: 'flex',
                     flexDirection: 'row',
                     justifyContent: 'space-around',

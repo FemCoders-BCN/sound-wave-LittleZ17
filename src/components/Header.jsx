@@ -9,6 +9,8 @@ const Header = () => {
     <Container
       direction='row'
       sx={{
+        position: 'relative',
+        zIndex: '2',
         padding: '5%',
         display: 'flex',
         justifyContent: 'space-between',
@@ -23,36 +25,52 @@ const Header = () => {
           flexDirection: 'row',
           justifyContent: 'space-between',
           alignItems: 'center',
-          // justifyItems:'start',
-          // justifyContent: 'center',
-
-        }}
-      >
+        }}>
 
         <CardMedia
           component="img"
           sx={{
-            width: { sm: '20vw', lg: '5vw' },
-            // display: {
-            //     xs: 'none', sm: 'block', lg: 'block',
-            // },
+            width: { sm: '5vw', lg: '8vw' }
           }}
           image={logo}
           alt="Logo"
         />
-      <Link to='/'><Typography fontSize='1.25rem' fontFamily='Poppins, sans-serif'>Soundwave</Typography></Link>
+
+        <Link to='/'>
+          <Typography
+            fontFamily='Poppins, sans-serif'
+            sx={{
+              fontSize: { xs: '1.25rem', sm: '1.5rem' },
+              margin: '0 10%'
+            }}
+          >Soundwave
+          </Typography>
+        </Link>
       </Box>
 
       <Box
-        direction='row'
         sx={{
-          width: '20%',
+          width: { xs: '30vw', sm: '20vw', lg: '15vw' },
           display: 'flex',
           justifyContent: 'space-between',
-        }}
-      >
-        <Link to='/discover'><Typography fontSize='1rem' fontFamily='Poppins, sans-serif'>Discover</Typography></Link>
-        <Link to='/join'><Typography fontSize='1rem' fontFamily='Poppins, sans-serif'>Join</Typography></Link>
+        }}>
+        <Link to='/discover'>
+          <Typography
+            fontFamily='Poppins, sans-serif'
+            sx={{
+              fontSize: { xs: '1rem', sm: '1.25rem' }
+            }}
+          >Discover
+          </Typography>
+        </Link>
+        <Link to='/join'>
+          <Typography
+            fontFamily='Poppins, sans-serif'
+            sx={{
+              fontSize: { xs: '1rem', sm: '1.25rem' }
+            }}>Join
+          </Typography>
+        </Link>
       </Box>
     </Container>
   )

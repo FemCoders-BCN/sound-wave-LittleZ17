@@ -8,7 +8,8 @@ const BoxIcons = () => {
                 flexWrap: 'wrap',
                 '& > :not(style)': {
                     m: 1,
-                    width: '25%',
+                    width: '5.5rem',
+                    height:'5.5rem'
                 },
             }}>
 

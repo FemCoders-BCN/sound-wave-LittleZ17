@@ -1,5 +1,5 @@
 import { Typography, Container, CardMedia } from "@mui/material"
-import BtnHome from './Button'
+import BtnHome from '../components/Button'
 import { Box } from '@mui/material'
 import imgHome from '../assets/images/landing-page-girl.png'
 
@@ -10,27 +10,28 @@ const TitleHome = () => {
 
         <Container
             sx={{
+                position: { xs: 'relative', sm: 'relative' },
+                zIndex: { xs: '2', sm: '2' },
                 width: '100%',
                 boxShadow: '0',
-                backgroundColor: '#2F303A',
-                // padding: '0 10%',
                 display: 'flex',
-                justifyContent:{sm: 'row'},
-                alignItems:'center'
+                justifyContent: { sm: 'row' },
+                alignItems: 'center',
+
 
             }}>
 
             <CardMedia
                 component="img"
                 sx={{
-                    width:{sm: '50%'},
-                    height:{sm: '10%'},
-                    display: {
-                        xs: 'none', sm: 'block', lg: 'block',
-                    },
+                    backgroundColor: 'transparent',
+                    zIndex: { xs: '2', sm: '2' },
+                    width: { sm: '50%' },
+                    height: { sm: '10%' },
+                    display: { xs: 'none', sm: 'block', lg: 'block' },
                 }}
                 image={imgHome}
-                alt="Live from space album cover"
+                alt="Lady listen music"
             />
 
             <Box
@@ -41,6 +42,8 @@ const TitleHome = () => {
                     display: 'flex',
                     flexDirection: 'column',
                     justifyContent: 'center',
+                    backgroundColor: 'transparent',
+                    zIndex: { xs: '2', sm: '2' },
                 }} >
                 <Typography
                     fontFamily='Poppins, sans-serif'

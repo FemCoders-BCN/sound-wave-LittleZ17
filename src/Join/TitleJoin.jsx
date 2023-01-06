@@ -1,22 +1,26 @@
-import { Typography, Box, TextField, InputAdornment, OutlinedInput } from "@mui/material"
+import { Typography, Box, TextField } from "@mui/material"
 import { Container } from "@mui/system"
-import BtnHome from "./Button"
+import BtnHome from "../components/Button"
 
 
 
 const TitleJoin = () => {
     return (
         <Container sx={{
+            position: 'relative',
+            zIndex: { xs: '2', sm: '2' },
             display: 'flex',
-            flexDirection: 'column',
+            flexDirection: { xs: 'column', sm: 'row', lg: 'row' },
+            alignItems: 'center',
             placeContent: 'center',
-            padding:'0 8%'
-            
+            padding: '5% 8%'
         }}>
             <Container
-            sx={{
-                margin:'15px 0',
-            }}
+                sx={{
+                    margin: '15px 0',
+                    zIndex: { xs: '2', sm: '2' },
+
+                }}
             >
                 <Typography
                     variant={'h2'}
@@ -30,60 +34,56 @@ const TitleJoin = () => {
                         fontcolor: '#D60679',
 
                     }}
-                >fun.</span></Typography>
+                >fun.</span>
+                </Typography>
             </Container>
+
             <Box
-                // component="form"
                 sx={{
                     alignSelf: 'center',
                     margin: '0',
-                    // marginBottom: '10%',
                     background: '#202027',
                     borderRadius: '15px',
-                    padding: '5% 10%',
-                    width: '320px',
+                    padding: '2% 10%',
+                    width: { xs: '95%', sm: '80%' },
 
                     display: 'flex',
                     justifyContent: 'center',
-                    flexDirection: 'column',
-
+                    flexDirection: { xs: 'column', sm: 'column' },
                 }}
             >
                 <Typography component={'p'}
                     sx={{
-                        // margin: '15px 0',
                         fontFamily: 'Poppins, sans-serif',
                         fontWeight: '700',
-                        fontSize:'1.075rem',
+                        fontSize: '1.075rem',
                     }}>Name:</Typography>
                 <TextField
                     sx={{
                         border: '2px solid #2E3852',
                         borderRadius: '5px',
-                        marginBottom:'10%',
+                        marginBottom: '10%',
                     }}
                 />
                 <Typography sx={{
-                    // margin: '15px 0',
                     fontFamily: 'Poppins, sans-serif',
                     fontWeight: '700',
-                    fontSize:'1.075rem',
+                    fontSize: '1.075rem',
                 }}>Email:</Typography>
                 <TextField sx={{
                     border: '2px solid #2E3852',
                     borderRadius: '5px',
-                    marginBottom:'10%',
+                    marginBottom: '10%',
                 }} />
                 <Typography sx={{
-                    // margin: '15px 0',
                     fontFamily: 'Poppins, sans-serif',
                     fontWeight: '700',
-                    fontSize:'1.075rem',
+                    fontSize: '1.075rem',
                 }}>Password:</Typography>
                 <TextField sx={{
                     border: '2px solid #2E3852',
                     borderRadius: '5px',
-                    marginBottom:'10%'
+                    marginBottom: '10%'
                 }} />
                 <BtnHome />
             </Box>

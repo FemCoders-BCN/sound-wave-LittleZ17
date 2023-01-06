@@ -7,9 +7,10 @@ const BtnHome = () => {
       <Button href='/join'
         variant='contained'
         sx={{
+          width:{xs:'40%', sm:'40%', lg:'30%'},
           backgroundColor: '#1762A7',
           textTransform: 'capitalize',
-          margin: '10% 0',
+          marginBottom:'5%',
           fontFamily: 'Poppins, sans-serif',
           fontSize: '1rem',
           fontWeight: '300',

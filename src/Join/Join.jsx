@@ -1,8 +1,9 @@
-import { Container, Typography } from "@mui/material"
+import { Container} from "@mui/material"
 
 import Footer from "../components/Footer"
 import Header from "../components/Header"
-import TitleJoin from "../components/TitleJoin"
+import TitleJoin from "./TitleJoin"
+import CircleJoin from "./CircleJoin"
 
 const Join = () => {
   return (
@@ -11,8 +12,9 @@ const Join = () => {
         display: 'flex',
         flexDirection: 'column',
         minHeight: '100vh',
-        padding: '0'
+        padding:{xs:'0', sm:'0', lg:'0'}
       }}>
+      <CircleJoin />
       <Header />
       <TitleJoin />
       <Footer />
