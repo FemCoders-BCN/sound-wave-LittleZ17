@@ -9,7 +9,7 @@ const TitleDiscover = () => {
     return (
         <Container
             sx={{
-                padding: '5%'
+                padding: '0 5%'
             }}>
             <Typography
                 variant={'h3'}
@@ -21,9 +21,8 @@ const TitleDiscover = () => {
                 music</Typography>
             <BoxIcons />
             <Box
-                sx={{
-                    margin: '10% 0',
-                }}>
+            sx={{padding:'5% 0'}}
+            >
                 <Typography
                     variant={'p'}
                     sx={{
